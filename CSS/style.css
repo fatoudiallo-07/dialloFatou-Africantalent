@@ -1,62 +1,85 @@
+:root{
+    --color-primary:#020c2315;
+    --color-secondary:rgba(0, 0, 0, 0.829);
+    --color-text:#ffffff;
+    --color-text-secondary:rgba(0, 0, 0, 0.842);
+    --display: flex;
+    --justify-content: space-between;
 
+}
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex&family=Playfair+Display&display=swap');
 
+body{
+    background-color: var(--color-primary);
+    color: var(--color-text-secondary)
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* .Tarif{
-    background-color: var(--color-text);
-     padding: 20px;  */espace entre les bords */
-     border-radius: 15px; */pour quil soit bien arrondis*/
-     /* height: 350px;
-
-    flex: 1;
-   
-} */
-/* .Tarifs{
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.navbar-nav .nav-link{
+    width: 150px;
     display: var(--display);
-    gap: 10px; 
-    margin-top: 20px;
-} */ 
+    justify-content: space-around;
+     color: var(--color-text-secondary);
+    font-family: 'Playfair Display', serif;
+    color: var(--color-text-secondary);
+   
+    
+   
+}
+
+
+h3 h2 {
+    font-family:'Roboto Flex',sans-serif;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
