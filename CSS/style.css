@@ -106,9 +106,17 @@ h3 h2 {
 
 }
 
-
+@media screen and (min-width: 374px) {
+/* Styles à appliquer pour les mobiles */ 
+}
    
-   
+@media screen and (max-width:  767px) { 
+/* Styles à appliquer pour les tablettes */ 
+}
+  
+ @media screen and (min-width: 1200px) { 
+/* Styles à appliquer pour les ordinateurs de bureau */ 
+}
   
 
 

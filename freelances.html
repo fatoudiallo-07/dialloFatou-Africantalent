@@ -14,14 +14,14 @@ rel="stylesheet">
 </head>
 <body> 
 <!-- Le contenu de la page sera ajoute ici --> 
- <nav class="navbar navbar-expand ">  <!--fixed-top --> <!--navbar-expand-lg sticky-top-->
-  <!-- <div class="container-fluid"> -->
-    <!-- <a class="navbar-brand" href="#"> AfriTalent  </a> -->
-      <img src="images/logoTRSPR - Copie.jpeg" alt="logoimage" height="50px" width="50px"> 
-    <!--button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
-     aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation"-->
-      <!--span class="navbar-toggler-icon"</span>
-    </button>-->
+<nav class="navbar  navbar-expand-lg sticky-top"> 
+  <div class="container-fluid"> 
+     <a class="navbar-brand" href="#"> <img src="images/logoTRSPR - Copie.jpeg" alt="logoimage" height="50px" width="50px">   </a>
+       
+     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+     aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>  
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup" >
       <div class="navbar-nav">
         <a class="nav-link " aria-current="page" href="index.html">Acceuil</a>
@@ -36,7 +36,7 @@ rel="stylesheet">
   </div>
 </nav>
 
-<section>
+<section class="carte">
   <select class="form-select" aria-label="Default select example">
    <option selected>Toute les categories</option>
   <option value="1">Developpeur Mobile</option>
@@ -49,11 +49,18 @@ rel="stylesheet">
   <option value="8">Ingenieur DevOpsk</option>
   <option value="9">Growth Hacker</option>
 </select>
+</section>
   
-  <h4  class="mt-5 pt-4 ">Profils</h4>
+  <h4  class="mt-5 pt-4 text-center">Profils</h4>
 
-  <div class="card" style="width: 18rem;" >
-   <img src="images/girl picture frl.jpg" class="card-img-top" alt="photoFL" width="300px" height="300px">
+
+<section class="container">
+
+  <!-- Carte 01 -->
+<div class="row">
+   <div class="col-12 col-md-6 col-lg-4">
+  <div class="card" >
+    <img src="images/girl picture frl.jpg" class="card-img-top" alt="photoFL" width="300px" height="300px">
   <div class="card-body">
     <h5 class="card-title">Awa Saran Dieng</h5>
    <p>Developpeur Mobile</p>
@@ -65,15 +72,17 @@ rel="stylesheet">
      <i class="bi bi-star-fill"></i>
       <i class="bi bi-star-fill"></i>
       <i class="bi bi-star-fill"></i>
-     
-   </p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
+     </p>
+    <a href="#" class="btn btn-primary">Voir profil</a>
+  </div>
     </div>
      </div>
     
 
-
-  <div class="card" style="width: 18rem;" id="col-12 col-md-6 col-lg-4">
+<!-- carte 02 -->
+ 
+    <div class="col-12 col-md-6 col-lg-4">
+       <div class="card">
   <img src="images/hijabiegirl.jpg" class="card-img-top" alt="photoFL" width="300px" height="300px">
   <div class="card-body">
     <h5 class="card-title">Ameena Jammelah Mohamed</h5>
@@ -90,11 +99,13 @@ rel="stylesheet">
    </p>
     <a href="#" class="btn btn-primary">Voir Profil</a>
     </div>
-
   </div>
 </div>
 
- <div class="card" style="width: 18rem;">
+              <!-- carte 03 -->
+ 
+  <div class="col-12 col-md-6 col-lg-4">
+    <div class="card">
    <img src="images/man picture frl2.jpg" class="card-img-top" alt="photoFL" width="300px" height="300px">
   <div class="card-body">
     <h5 class="card-title">Moussa Ndiaye </h5>
@@ -113,14 +124,18 @@ rel="stylesheet">
     <a href="#" class="btn btn-primary">Voir Profil</a>
     </div>
   </div>
- 
-<div class="card" style="width: 18rem;">
+ </div>
+                 <!-- carte 04 -->
+
+
+  <div class="col-12 col-md-6 col-lg-4">
+    <div class="card">
    <img src="images/girl picture frl1.jpg" class="card-img-top" alt="photoFL" width="300px" height="300px">
   <div class="card-body">
     <h5 class="card-title">keyonna Sarr</h5>
    <p>Data Analyst</p>
-   <p>Automatiser vos taches repetitives et gagnez des heures chaque semaine </p>
-   <p>56000FCFA/h</p>
+   <p>Creatif depuis 8ans, j'ai aide plus de 40startup à trouver leur </p>
+   <p>85000FCFA/h</p>
     <p>
   <i class="bi bi-star-fill"></i>
     <i class="bi bi-star-fill"></i>
@@ -130,15 +145,18 @@ rel="stylesheet">
     <a href="#" class="btn btn-primary">Voir Profil</a>
     </div>
 </div>
-    
+</div>
+               <!-- carte 05-->
 
-    <div class="card" style="width: 18rem;">
+   
+      <div class="col-12 col-md-6 col-lg-4">
+         <div class="card" >
    <img src="images/man picture frl3.jpg" class="card-img-top" alt="photoFL" width="300px" height="300px">
   <div class="card-body">
     <h5 class="card-title">Khalifa Diagne</h5>
    <p>Data Scientist</p>
-   <p>Automatiser vos taches repetitives et gagnez des heures chaque semaine </p>
-   <p>56000FCFA/h</p>
+   <p>Passionné par les modéles ML et les statistiques,je transforme vos données en algorithmes capables d'anticiper les comportement clients. </p>
+   <p>50000FCFA/h</p>
    <p>
   <i class="bi bi-star-fill"></i>
     <i class="bi bi-star-fill"></i>
@@ -150,14 +168,21 @@ rel="stylesheet">
     <a href="#" class="btn btn-primary">Voir Profil</a>
     </div>
     </div>
+    </div>  
 
-    <div class="card" style="width: 18rem;">
+
+                       <!-- carte 06-->
+
+
+    
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="card">
    <img src="images/man picture frl.jpg" class="card-img-top" alt="photoFL" width="300px" height="300px">
   <div class="card-body">
     <h5 class="card-title">Malick Gueye</h5>
    <p>Full stack</p>
-   <p>Automatiser vos taches repetitives et gagnez des heures chaque semaine </p>
-   <p>56000FCFA/h</p>
+   <p>Je livre des projets solides de la bases de données à l'interface. </p>
+   <p>80000FCFA/h</p>
     <p>
   <i class="bi bi-star-fill"></i>
     <i class="bi bi-star-fill"></i>
@@ -167,18 +192,23 @@ rel="stylesheet">
      
    </p>
     <a href="#" class="btn btn-primary">Voir Profil</a>
-
+  </div>   
     </div>
     </div>
 
-    
-     <div class="card" style="width: 18rem;">
+          <!-- carte 07-->
+
+
+
+     
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="card" >
    <img src="images/girl picture frl3.jpg" class="card-img-top" alt="photoFL" width="300px" height="300px">
   <div class="card-body">
     <h5 class="card-title">Maimouna Diallo</h5>
    <p>Ingenieur Cloud et Securite</p>
-   <p>Automatiser vos taches repetitives et gagnez des heures chaque semaine </p>
-   <p>56000FCFA/h</p>
+   <p>je concoie et deploie des architecture cloud robuste pour que vos apps tiennent la charge sans explosion de couts ni de complexité</p>
+   <p>78000FCFA/h</p>
    <p>
   <i class="bi bi-star-fill"></i>
     <i class="bi bi-star-fill"></i>
@@ -188,49 +218,69 @@ rel="stylesheet">
     <a href="#" class="btn btn-primary">Voir Profil</a>
     </div>
      </div>
+     </div> 
 
-    <div class="card" style="width: 18rem;">
+               <!-- carte 08-->
+
+
+    
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="card">
    <img src="images/Amazon FBA Complete Guide.jpg" class="card-img-top" alt="photoFL" width="300px" height="300px">
   <div class="card-body">
-    <h5 class="card-title">Malick Gueye</h5>
+    <h5 class="card-title">Moustapha Fall</h5>
    <p>Growth Hacker</p>
-   <p>Automatiser vos taches repetitives et gagnez des heures chaque semaine </p>
-   <p>56000FCFA/h</p>
+   <p>J'optimise la visibilite de vos pages avec des methodes qui fonctionnent vraiment.</p>
+   <p>67000FCFA/h</p>
     <p>
   <i class="bi bi-star-fill"></i>
     <i class="bi bi-star-fill"></i>
      <i class="bi bi-star-fill"></i>
       <i class="bi bi-star-fill"></i>
-      <i class="bi bi-star-fill"></i>
-     
+      <i class="bi bi-star-fill"></i>  
    </p>
     <a href="#" class="btn btn-primary">Voir Profil</a>
     </div>
     </div>
-
-    <div class="card" style="width: 18rem;">
+    </div>
+                    <!-- carte 09-->
+    
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="card">
    <img src="images/Keyonna _.jpg" class="card-img-top" alt="photoFL" width="300px" height="300px">
   <div class="card-body">
     <h5 class="card-title">Maty Sarr</h5>
    <p>Ingenieur DevOpsk </p>
-   <p>Automatiser vos taches repetitives et gagnez des heures chaque semaine </p>
-   <p>56000FCFA/h</p>
+   <p>Accelerer vos livraisons sans casser la stabilite</p>
+   <p>70000FCFA/h</p>
     <p>
   <i class="bi bi-star-fill"></i>
     <i class="bi bi-star-fill"></i>
      <i class="bi bi-star-fill"></i>
      <i class="bi bi-star-fill"></i>
-     
-     
-   </p>
+     </p>
     <a href="#" class="btn btn-primary">Voir Profil</a>
     </div>
     </div>
+    </div>
+
+
+</div>
+</section>
+
+
+
+
+
+
+
+
 
     <footer>    
     <div class="container text-center mt-5 pt-4">
   <div class="row align-items-start ">
-    <div class="col align-items-stretch d-flex  justify-content-center  mt-4">
+    <div class="col 
+    align-items-stretch d-flex  justify-content-center  mt-4">
       <h1></h1>
       <img src="images/logoTRSPR - Copie.jpeg" alt="logoTRSPR" width="70px" height="70px">
       <strong>AfriTalent c'est ce qu'il vous faut ! </strong>
