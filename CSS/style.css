@@ -7,7 +7,7 @@
     --justify-content: space-between;
 
 }
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex&family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arial&family=Playfair+Display&display=swap');
 
 body{
     background-color: var(--color-primary);
@@ -19,21 +19,26 @@ body{
     padding: 0;
     box-sizing: border-box;
 }
-.navbar-nav .nav-link{
-    width: 150px;
+.navbar-nav {
+    /* width: 150px; */
     display: var(--display);
-    justify-content: space-around;
+    justify-content: space-between;
      color: var(--color-text-secondary);
-    font-family: 'Playfair Display', serif;
+    align-items: center;
+    padding: 0 40px;   
+     gap: 40px;
+     margin-left: auto;
+     
+}
+
+.nav-link{
+     font-family: 'Playfair Display', serif;
     color: var(--color-text-secondary);
-   
-    
-   
 }
 
 
 h3 h2 {
-    font-family:'Roboto Flex',sans-serif;
+    font-family:'Arial',sans-serif;
 }
 #cards{     
     /* background-color:#020c2315; */
@@ -118,51 +123,229 @@ h3 h2 {
 /* Styles à appliquer pour les ordinateurs de bureau */ 
 }
   
+.row{
+     /* background-color:rgba(0, 0, 0, 0.208);  */
+   
+   /* height: auto; */
+   
+}
+
+.card{
+   margin-top: 40px;
+    text-align: center;
+    box-shadow: #020c2315;
+    box-shadow: none;
+  transition: box-shadow 0.3s ease;
+  transition: transform 0.3s ease;
+  
+   height: ;
+}
+.card:hover{
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.829);
+
+  transform: scale(1.05);
+}
+
+.titre{
+    text-align:center;
+    margin-top:60px;
+}
+.titre h1{
+    font-size:42px;
+    margin-bottom:10px;
+}
+.titre p{
+    color:gray;
+    font-size:18px;
+    
+
+    }
+    
+                                                /* tarifs style */
 
 
 
 
+body{
+    font-family: Arial, sans-serif;
+    background:#f5f7fa;
+    margin:0;
+    padding:0;
+}
+.titre{
+    text-align:center;
+    margin-top:60px;
+}
+.titre h1{
+    font-size:42px;
+    margin-bottom:10px;
+}
+.titre p{
+    color:gray;
+    font-size:18px;
+}
+.Tarifs{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    flex-wrap:wrap;
+    margin:50px auto;
+    max-width:1200px;
+}
+.Tarif{
+    position:relative;
+    background:white;
+    width:320px;
+    padding:30px;
+    border-radius:20px;
+    box-shadow:0 5px 20px rgba(0,0,0,.08);
+    transition:.3s;
+}
+.Tarif:hover{
+    transform:translateY(-10px);
+    box-shadow:0 15px 30px rgba(0,0,0,.15);
+}
+.Tarif h3{
+    text-align:center;
+    font-size:24px;
+    margin-bottom:10px;
+}
+
+.Tarif h2{
+    text-align:center;
+    color:#0d6efd;
+    margin-bottom:25px;
+}
+
+.Tarif p{
+    margin:12px 0;
+    color:#444;
+}
+
+.Tarif i{
+    color:#198754;
+    margin-right:8px;
+}
+.btn-tarif{
+    width:100%;
+    padding:12px;
+    margin-top:20px;
+    border:none;
+    border-radius:10px;
+    background:#0d6efd;
+    color:white;
+    font-weight:bold;
+    cursor:pointer;
+    font-size:15px;
+}
+.btn-tarif:hover{
+    background:#0b5ed7;
+}
+.pro{
+    border:2px solid #0d6efd;
+    transform:scale(1.05);
+}
+.pro:hover{
+    transform:scale(1.08);
+}   
+.badge-populaire{
+    position:absolute;
+   top:-12px;
+   right:20px;
+    background:#0d6efd;
+    color:white;
+    padding:6px 15px;
+    border-radius:30px;
+    font-size:12px;
+    font-weight:bold;
+}
+.carousel-item i{
+    color: #fbbc04;
+}
+
+.card-body i{
+     color: #fbbc04;
+}
+
+                                 /* contact */
 
 
+    .formulaire{
+        text-align: center;
+    }
+
+    #container{
+    display: flex;
+    justify-content: center;
+    height: 50vh;
+}
+#btn{
+    justify-content: ;
+}
 
 
+                                      /* About */
+.about{
+    text-align:center;
+    margin-top:60px;
+}
+.about h1{
+    font-size:42px;
+    margin-bottom:10px;
+}
+.about p{
+    color:gray;
+    font-size:18px;
 
+    }
+    
+.about1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px;
+    gap: 50px;
+}
+.carteabout{
+    display: flex;
+    justify-content: center;
+     gap: 30px;
+    
+}
+.equipe{
+     text-align:center;
+    margin-top:60px;
+     margin-bottom:20px;
+     font-size:25px;
+    
+}
+.nosvaleur{
+ display: flex;
+  margin-top:60px;
+     margin-bottom:10px;
+      gap: 30px;
 
+}
+.navbar{
+    width: 100%;
+    padding: 20px;
+    transition: 0.3s;
+    background-color:
 
+}
+.navbar.scrolled{
+    background-color:rgba(0, 0, 0, 0.208) ;
+    padding: 10px;
+    border: radius 30px; ;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+}
+#topbtn{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+     padding: 10px;
+    border: none; 
+    border-radius: 50%;
+    cursor: pointer; 
+}
