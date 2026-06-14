@@ -34,3 +34,41 @@ window.addEventListener("scroll",() => {
 
   })
  })
+
+ let elements = document.querySelectorAll(".fade-in");
+ window.addEventListener("scroll" , ()  => {
+  elements.forEach(el => {
+    let position = el.getBoundingClientRect().top;
+    if(position < window.innerHeight){
+      el.classList.add("show")
+    }
+    
+  });
+
+  });
+
+   document.addEventListener("DOMContentLoaded", () => {
+  
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        document.querySelectorAll(".counter").forEach((counter) => {
+          let target = parseInt(counter.getAttribute("data-target"));
+          let count = 0;
+          let update = () => {
+            count++;
+            counter.innerHTML = count;
+            if (count < target) setTimeout(update, 20);
+          };
+          update();
+        });
+        observer.disconnect();
+      }
+    });
+  }, { threshold: 0.5 });
+  
+  
+  const section = document.querySelector(".stats-section");
+  if (section) observer.observe(section);
+  
+});

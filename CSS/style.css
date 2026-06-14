@@ -34,6 +34,9 @@ body{
 .nav-link{
      font-family: 'Playfair Display', serif;
     color: var(--color-text-secondary);
+    font-size:40x;
+    font-weight:bold;
+
 }
 
 
@@ -349,3 +352,23 @@ body{
     border-radius: 50%;
     cursor: pointer; 
 }
+.fade-in{
+    /* opacity: 0; invisible */
+    transform: translateY(20px);
+    transition: 0.6s ease;
+}
+.fade-in.show{
+    opacity: 1;
+     transform: translateY(0);
+}
+.footer{
+    text-align: center;
+}
+.stats-section{
+
+   /* justify-content: center;
+   justify-content: space-between;
+   display: flex; */
+
+
+   }
