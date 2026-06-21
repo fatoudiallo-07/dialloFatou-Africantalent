@@ -9,7 +9,7 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
   <!-- Votre feuille de style personnelle -->
-  <link rel="stylesheet" href="CSS/style.css">
+  <link rel="stylesheet" href="css/style.css">
   <style>
   .bg {
     background-color: rgb(30, 28, 28);
@@ -22,21 +22,16 @@
 
 <body>
   <button id="topbtn"><i class="bi bi-arrow-up-square"></i></button>
-  <nav class="navbar  navbar-expand-lg sticky-top"> <!-- cree une barre de nav responsive qui ne bouge pas quand on scrolle -->
-    
+  <nav class="navbar  navbar-expand-lg sticky-top">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#"> <img src="images/logonav.jpeg" alt="logoimage" height="50"
-          width="50"> </a>
+      <a class="navbar-brand" href="#"> <img src="images/logoTRSPR - Copie.jpeg" alt="logoimage" height="50"
+          width="50px"> </a>
 
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
         aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
-          <!-- Transforme le bouton en bouton de menu
-        si on clique on pourra fermer et ouvrir avec data-bs-target pour l'indiquer l'element a ouvrir -->
       </button>
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-         <!-- collapse permet de cacher le menu -->
-        
         <div class="navbar-nav">
           <a class="nav-link " aria-current="page" href="index.html">Acceuil</a>
           <a class="nav-link" href="freelances.html">Freelances</a>
@@ -54,14 +49,13 @@
 
 
 
-  
-  <section class="formul">
-    <div class="Formulaire">
-     <h1>Formulaires de contact.</h1>
-     <p>Inscrivez-Vous.</p>
-     </div>
+  <div class="Formulaire">
+    <h1>Formulaires de contact.</h1>
+    <p>Inscrivez-Vous.</p>
+  </div>
+  <section class="formulaire">
     <div id="container">
-      <form action="traitement.php" method="get" class="form">
+      <form action="" method="">
         <div>
           <label for="nom">Nom</label>
           <input type="text" id="nom">
@@ -74,7 +68,7 @@
         </div>
 
         <div>
-          <label for="email">Email</label>
+          <label for="">Email</label>
           <input type="Email" id="email">
            <span class="error"></span>
         </div>
@@ -110,7 +104,7 @@
   </section>
   <p>Localisation: <iframe
       src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d3859.332411332152!2d-17.456876426679496!3d14.693784385803678!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sISI!5e0!3m2!1sfr!2ssn!4v1777748727884!5m2!1sfr!2ssn"
-      width="600" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+      width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
       referrerpolicy="no-referrer-when-downgrade"></iframe></p>
 
 
@@ -118,16 +112,15 @@
   <footer class="fade-in">
     <div class="container text-center mt-5 pt-4">
       <div class="row align-items-start ">
-        <!-- tout les elements commence en haut de la ligne -->
         <div class="col align-items-stretch d-flex  justify-content-center  mt-4">
-          <!-- forme une colonne centre le texte aligne les elements margin top -->
-          <img src="images/logonav.jpeg" alt="logoTRSPR" width="70" height="70">
+          <h1></h1>
+          <img src="images/logoTRSPR - Copie.jpeg" alt="logoTRSPR" width="70px" height="70px">
           <strong>AfriTalent c'est ce qu'il vous faut ! </strong>
         </div>
 
 
         <div class="col">
-          <strong>Liens utiles</strong>
+          <h4>Liens utiles</h4>
           <a class="nav-link " aria-current="page" href="index.html">Acceuil</a>
           <a class="nav-link" href="freelances.html">Freelaces</a>
           <a class="nav-link" href="tarifs.html">Tarifs</a>
@@ -137,8 +130,8 @@
 
 
         <div class="col">
-          <strong>Ressources</strong>
-          <ul >
+          <h4>Ressources</h4>
+          <ul type="none">
             <li>Blog</li>
             <li>Support</li>
             <li>FAQ</li>
@@ -147,11 +140,11 @@
 
 
         <div class="col">
-          <strong>Contact</strong>
-          <div>
+          <h4>Contact</h4>
+          <article>
             <p>Email : contact@Afritalent.com</p>
             <p>Téléphone : 33 23 45 67 89</p>
-          </div>
+          </article>
           <i class="bi bi-tiktok"></i>
           <i class="bi bi-whatsapp"></i>
           <i class="bi bi-twitter-x"></i>
@@ -160,69 +153,7 @@
     </div>
   </footer>
   <hr>
-  <p class="foot">&copy;2026 Afritalent.Tout droits réservés</p>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  <p class="footer">&copy;2026 Afritalent.Tout droits réservés</p>
 
 
 
@@ -256,10 +187,9 @@
   <!-- Le contenu de la page sera ajoute ici -->
   <!-- Bootstrap 5 via CDN : script JavaScript -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
- 
- <!-- Votre script JavaScript -->
- 
-<script src="Js/main.js"></script>s
+  <!-- Votre script JavaScript -->
+  <script src="js/main.js"></script>
+
 </body>
 
 </html>

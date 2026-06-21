@@ -1,105 +1,124 @@
 :root {
-    --color-primary: #020c2315;
-    --color-secondary: rgba(0, 0, 0, 0.829);
+    --color-primary: #5184a1;
+    --color-secondary: #2a6f97;
     --color-text: #ffffff;
     --color-text-secondary: rgba(0, 0, 0, 0.842);
     --display: flex;
     --justify-content: space-between;
-
 }
+/* palette de couleur variable CSS definie dans route pour faciliter l'application */
 
 @import url('https://fonts.googleapis.com/css2?family=Arial&family=Playfair+Display&display=swap');
 
+/* deux google font importe pour faciliter lapllication */
+
 body {
-    background-color: var(--color-primary);
-    color: var(--color-text-secondary)
+   background-color: #ffffff;
+    color: var(--color-text-secondary);
+    font-family: Arial, sans-serif;
+    background: #f5f7fa;
+   
 }
 
 * {
-    margin: 0;
-    padding: 0;
+    margin: 0; /* Supprime les marges  du navigateur */
+    padding:0; /* Supprime les espacements internes*/
     box-sizing: border-box;
 }
 
 .navbar-nav {
     /* width: 150px; */
-    display: var(--display);
-    justify-content: space-between;
+    display: var(--display); 
     color: var(--color-text-secondary);
     align-items: center;
-    padding: 0 40px;
-    gap: 40px;
+     padding: 0 40px;                        /* espace a linterieur  */
+     gap: 40px; /*espace entre les elements */
     margin-left: auto;
-
+    
 }
 
+.navbar{
+    background-color: #61a5c2
+    ;
+    
+    
+
+}
 .nav-link {
     font-family: 'Playfair Display', serif;
     color: var(--color-text-secondary);
-    font-size: 40x;
-    /* font-weight:bold; */
+     font-size: 70x;   /* permet d'augmenter la taille des link */
+    
 
 }
 
 
 h3 h2 {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Arial', sans-serif; /* selectionner tout les h2 h3 pour les applique le font family */
 }
 
 #cards {
-    /* background-color:#020c2315; */
-    display: grid;
+    
+    display: grid; 
     grid-template-columns: 1fr 2fr;
     grid-template-rows: 1fr 2fr;
     height: 60vh;
     gap: 50px;
+     color: aliceblue;
 
 }
-
+/* Active le mode grille */
+/* je fais deux colonne la 1er normale la 2e est deux fois plus grande que la 1er */
+/* je fais deux ligne la 1er normale la 2e est deux fois plus grande que la 1er */
+/* une taille pour chaque grille  */
+/* espace entre les grilles */
 
 
 
 .caard1 {
-    background-color: rgba(0, 0, 0, 0.208);
-    grid-row: 1/2;
-    grid-column: 1/2;
-    text-align: center;
-    border-radius: 10%;
-
+    background-color:  #61a5c2;
+    grid-row: 1/2;  /*prend un demi de la ligne */
+    grid-column: 1/2; /*prend 2 tiers de la colonne  moins haut que le 2e */
+    text-align: center;  /* centre les texte  */
+     border-radius: 10%;  /*permet d'arrondir les coins */
+   border: 2px solid #2a6f97;  /* un border qui plus fonce que la couleur pour entourer les carte */
 
 
 }
 
 .caard2 {
-    background-color: rgba(0, 0, 0, 0.208);
-    grid-row: 1/2;
-    grid-column: 2/3;
-    text-align: center;
-    border-radius: 20%;
+    background-color: #61a5c2;
+    grid-row: 1/2; /*prend un 2 de la ligne  */
+    grid-column: 2/3;/*prend 2 tiers de la colonne  plus haut que le 1e */
+    text-align: center;  /* centre les texte  */
+    border-radius: 20%;  /*permet d'arrondir les coins */
+     border: 2px solid #2a6f97; /* un border qui plus fonce que la couleur pour entourer les carte */
 
 }
 
 .caard3 {
-    background-color: rgba(0, 0, 0, 0.208);
-    grid-row: 2/3;
-    grid-column: 1/2;
-    text-align: center;
-    border-radius: 20%;
+    background-color: #61a5c2;
+    grid-row: 2/3; /*prend 2 tiers de la ligne plus long que le 2e */
+    grid-column: 1/2; /*prend un demi de la colonne plus haut que le 2e */
+    text-align: center;  /* centre les texte  */
+    border-radius: 20%; /*permet d'arrondir les coins */
+     border: 2px solid #2a6f97; /* un border qui plus fonce que la couleur pour entourer les carte */
 
 }
 
 .caard4 {
-    background-color: rgba(0, 0, 0, 0.208);
-    grid-row: 2/3;
-    grid-column: 2/3;
-    text-align: center;
-    border-radius: 20%;
+    background-color: #61a5c2;
+    grid-row: 2/3; /*prend 2 tiers de la ligne plus petit que le 2e */
+    grid-column: 2/3; /*prend 2 tiers de la colonne moins haut que le 2e */
+    text-align: center; /* centre les texte  */
+    border-radius: 20%; /*permet d'arrondir les coins */
+     border: 2px solid #2a6f97; /* un border qui plus fonce que la couleur pour entourer les carte */
 
 }
 
 .color {
-    text-align: center;
-    margin-top: 35px;
+    text-align: center; /* centre les texte  */
+     margin-top: 35px;             /*espace en haut et en bas */
     margin-bottom: 35px;
 }
 
@@ -110,12 +129,13 @@ h3 h2 {
 }
 
 .service-card {
-    background-color: rgba(0, 0, 0, 0.208);
+    background-color: #61a5c2;
     border-radius: 20%;
     height: 25vh;
-    text-align: center;
+    text-align: center; /* centre les texte  */
     box-shadow: #020c2315;
-    box-shadow: none;
+     border: 2px solid #2a6f97;
+    color: aliceblue;
     transition: box-shadow 0.3s ease;
 }
 
@@ -136,38 +156,34 @@ h3 h2 {
     /* Styles à appliquer pour les ordinateurs de bureau */
 }
 
-.row {
-    /* background-color:rgba(0, 0, 0, 0.208);  */
 
-    /* height: auto; */
 
-}
 
 .card {
-    margin-top: 40px;
+    margin-top: 40px;   /*cree de lespace en haut*/
     text-align: center;
-    box-shadow: #020c2315;
+    /* box-shadow: #020c2315; cree une ombre noir pour chaque carte */
     box-shadow: none;
-    transition: box-shadow 0.3s ease;
+     transition: box-shadow 0.3s ease; /* animation quand on survole une carte */
     transition: transform 0.3s ease;
 
-    height: ;
+   
 }
 
 .card:hover {
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.829);
 
-    transform: scale(1.05);
+    transform: scale(1.05); /*agrandi les carte au  click*/
 }
 
 .titre {
     text-align: center;
-    margin-top: 60px;
+    margin-top: 60px; /* espace en haut   */
 }
 
 .titre h1 {
     font-size: 42px;
-    margin-bottom: 10px;
+    margin-bottom: 10px; /*espace en haut et en bas */
 }
 
 .titre p {
@@ -177,26 +193,21 @@ h3 h2 {
 
 }
 
-/* tarifs style */
+                              /* tarifs style */
 
 
 
 
-body {
-    font-family: Arial, sans-serif;
-    background: #f5f7fa;
-    margin: 0;
-    padding: 0;
-}
+
 
 .titre {
-    text-align: center;
-    margin-top: 60px;
+    text-align: center; /* centre les texte  */
+    margin-top: 60px; /* espace en haut  */
 }
 
 .titre h1 {
     font-size: 42px;
-    margin-bottom: 10px;
+    margin-bottom: 10px; /* espace en bas   */
 }
 
 .titre p {
@@ -208,9 +219,10 @@ body {
     display: flex;
     justify-content: center;
     gap: 30px;
-    flex-wrap: wrap;
-    margin: 50px auto;
+    flex-wrap: wrap; /* Retour à la ligne si manque d'espace */
+    margin: 50px auto; /* espace en haut et bas plus a gauche et a droite  */
     max-width: 1200px;
+    margin-bottom: 60px; /* espace en bas   */
 }
 
 .Tarif {
@@ -224,24 +236,23 @@ body {
 }
 
 .Tarif:hover {
-    transform: translateY(-10px);
+    transform: translateY(-10px);/* La carte monte légèrement */
     box-shadow: 0 15px 30px rgba(0, 0, 0, .15);
-}
-
-.Tarif h3 {
-    text-align: center;
-    font-size: 24px;
-    margin-bottom: 10px;
 }
 
 .Tarif h2 {
     text-align: center;
-    color: #0d6efd;
-    margin-bottom: 25px;
+    font-size: 24px;
+    margin-bottom: 10px; /* espace en bas   */
+}
+
+.Tarif h3 {
+    text-align: center; /* centre les texte  */
+    color: #2a6f97; /* Bleu Bootstrap */
+    margin-bottom: 25px; /* Espace sous le prix */
 }
 
 .Tarif p {
-    margin: 12px 0;
     color: #444;
 }
 
@@ -253,43 +264,43 @@ body {
 .btn-tarif {
     width: 100%;
     padding: 12px;
-    margin-top: 20px;
+    margin-top: 20px; /* espace en haut   */
     border: none;
     border-radius: 10px;
-    background: #0d6efd;
+    background: #2a6f97;
     color: white;
-    font-weight: bold;
-    cursor: pointer;
+    font-weight: bold; /* mettre l'ecriture en gras  */
+    cursor: pointer; /* la souris devient une main quand on survole  */
     font-size: 15px;
 }
 
-.btn-tarif:hover {
+/* .btn-tarif:hover {
     background: #0b5ed7;
-}
+} */
 
 .pro {
-    border: 2px solid #0d6efd;
-    transform: scale(1.05);
+    border: 2px solid #2a6f97;
+    transform: scale(1.05); /* aggrandi la carte pro  */
 }
 
 .pro:hover {
-    transform: scale(1.08);
+    transform: scale(1.08);  /* aggrandi la carte pro au click */
 }
 
 .badge-populaire {
-    position: absolute;
-    top: -12px;
-    right: 20px;
-    background: #0d6efd;
+    position: absolute; /* Position libre dans la carte */
+    top: -12px; /* Dépasse légèrement du haut */
+    right: 20px; /* Placé à droite */
+    background: #2a6f97;
     color: white;
-    padding: 6px 15px;
-    border-radius: 30px;
+    padding: 6px 15px; /* creer de l'espace  */
+    border-radius: 30px; /* Forme arrondie */
     font-size: 12px;
-    font-weight: bold;
+    font-weight: bold; /* Texte en gras */
 }
 
 .carousel-item i {
-    color: #fbbc04;
+    color: #fbbc04; /* permet de colorer les etoiles  */
 }
 
 .card-body i {
@@ -302,66 +313,66 @@ body {
 
 .Formulaire {
     text-align: center;
-    margin-top: 40px;
+    margin-top: 40px; /* espace en bas   */
 }
 
 .formulaire {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    display: flex; /* aligne les elements  */
+    align-items: center; /* centre les texte  */
+    justify-content: center; /* centre les texte  */
     gap: 30px;
 }
 
 .Formulaire h1 {
-    font-size: 30px;
-    margin-bottom: 10px;
+    font-size: 30px; /* agrandi ou reduit la taille */
+    margin-bottom: 10px; /* espace en bas   */
 }
 
 .Formulaire p {
     color: gray;
-    font-size: 18px;
+    font-size: 18px; /* agrandi ou reduit la taille */
 }
 
 #container {
-    display: flex;
-    justify-content: center;
+    display: flex; /* aligne les elements  */
+    justify-content: center; /* centre les elements  */
     height: 80vh;
     font-family: 'Playfair Display', serif;
-    margin-bottom: 30px;
+    margin-bottom: 30px; /* espace en bas   */
 }
 
 #container form {
     /* border: 5px dashed rgba(216, 112, 147, 0.1); */
-    display: flex;
-    flex-direction: column;
+    display: flex; /* aligne les elements  */
+    flex-direction: column; /* aligne les elements en colonne  */
     justify-content: space-between;
     padding: 20px;
     width: 35vw;
-    background: linear-gradient(to bottom, rgba(32, 62, 171, 0.03), rgba(56, 79, 193, 0.13))
+    background: linear-gradient(to bottom, rgba(4, 44, 65, 0.03), rgba(11, 141, 206, 0.735))
 }
 
 #container form>div {
-    display: flex;
+    display: flex;  /* aligne les elements  */
     justify-content: space-between;
-    align-items: center;
+    align-items: center; /* centre les texte  */
 
 }
 
 #container form>div:not(:last-child) {
-    display: flex;
+    display: flex;  /* aligne les elements  */
     justify-content: space-between;
-    align-items: center;
+    align-items: center; /* centre les elements  */
 }
 
 #container form>div:last-child {
-    display: flex;
+    display: flex;  /* aligne les elements  */
     justify-content: center;
     gap: 1em;
 }
 
 #container form>div>input:not(input[type="submit"]) {
     width: 15em;
-    border-radius: 5px;
+    border-radius: 5px; /*permet d'arrondir les coins d'un elements */
     height: 1.7em;
 
 
@@ -371,99 +382,178 @@ body {
 
 /* About */
 .about {
-    text-align: center;
-    margin-top: 60px;
+    text-align: center; /* centre les texte  */
+    margin-top: 60px; /* espace en bas   */
 }
 
 .about h1 {
-    font-size: 42px;
-    margin-bottom: 10px;
+    font-size: 42px; /* agrandi ou reduit la taille */
+    margin-bottom: 10px; /* espace en bas   */
 }
 
 .about p {
     color: gray;
-    font-size: 18px;
+    font-size: 18px; /* agrandi ou reduit la taille */
+
+}
+.about h3 {
+    color: gray;
+    font-size: 18px;/* agrandi ou reduit la taille */
 
 }
 
 .about1 {
-    display: flex;
-    align-items: center;
+    display: flex; /* aligne les elements  */
+    align-items: center; /* centre les elements  */
     justify-content: space-between;
-    padding: 40px;
-    gap: 50px;
+    padding: 40px; /* espace entre  les elements  */
+    gap: 50px;/* espace entre  les elements  */
 }
 
 .carteabout {
-    display: flex;
-    justify-content: center;
-    gap: 30px;
+    display: flex; /* aligne les elements  */
+    justify-content: center; /* centre les elements  */
+    gap: 30px; /* espace entre  les elements  */
 
 }
 
 .equipe {
-    text-align: center;
-    margin-top: 60px;
-    margin-bottom: 20px;
-    font-size: 25px;
+    text-align: center; /* centre les elements  */
+    margin-top: 60px; /* espace en bas   */
+    margin-bottom: 20px; /* espace en bas   */
+    font-size: 25px; /* agrabdi la taille */
 
 }
 
 .nosvaleur {
-    display: flex;
-    margin-top: 60px;
-    margin-bottom: 10px;
+    display: flex; /* aligne les elements  */
+    margin-top: 60px; /* espace en haut  */
+    margin-bottom: 10px; /* espace en bas  */
     gap: 30px;
+    background-color: #61a5c2;
+   color: aliceblue;
+    text-align: center;
+   
+     border: 2px solid #2a6f97;
 
 }
 
 .navbar {
     width: 100%;
-    padding: 20px;
+    padding: 20px; /*espace a linterieur dun element*/
     transition: 0.3s;
-    background-color:
+  
 
 }
 
 .navbar.scrolled {
-    background-color: rgba(0, 0, 0, 0.208);
+    background-color: rgba(0, 0, 0, 0.644);
     padding: 10px;
-    border: radius 30px;
-    ;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    border-radius : 30px;  /*applique une bordure  */
+    
+    box-shadow: 0 2px 10px rgba(18, 13, 13, 0.922);
+    font-size: x-large;
+    
 
 }
 
 #topbtn {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
+    position: fixed;  /*permet de fixer le navbar */
+    bottom: 20px;  /*   */
+    right: 20px; /*espace vers la droite*/
     padding: 10px;
-    border: none;
-    border-radius: 50%;
+    border: none;  /*applique une bordure  */
+    border-radius: 50%;  /*applique une bordure  */
     cursor: pointer;
 }
 
 .fade-in {
-    /* opacity: 0; invisible */
+     opacity: 0;  /* rend invisible */
     transform: translateY(20px);
-    transition: 0.6s ease;
+    transition: 1s ease; /*decaler de 20 vers le bas  */
 }
 
 .fade-in.show {
-    opacity: 1;
-    transform: translateY(0);
+    opacity: 1; /*visible */
+    transform: translateY(0); /*revenir a sa position normale */
 }
 
 .footer {
-    text-align: center;
+    text-align: center; /* centre les texte  */
+    
 }
 
-.stats-section {
 
-    /* justify-content: center;
-   justify-content: space-between;
-   display: flex; */
+.card-title{
+    font-size: 20px;/* agrandi la taille */
+}
+.col h3{
+   font-size: 20px;/* agrandi la taille */
+}
+.counter{
+    margin-top: 30px; /* espace en haiut  */
+    margin-bottom: 30px; /* espace en bas   */
+    color: rgba(0, 0, 0, 0.781);
+}
+.color{
+     margin-top: 30px;/* espace en haut   */
+    margin-bottom: 30px; /* espace en bas   */
+}
+.rowe{
+    display:flex; /* aligne les elements  */
+    align-items: center;
+}
+.btn{
+    background: #61a5c2;
+     border-radius: 10px;
+    /* display: flex; */
+    border:#2a6f97 ;
+   
+     
+}
+#hero{
+    display: flex; /* aligne les elements  */
+    align-items: center; /* centre les texte  */
+    justify-content: space-between; /* espace entre les element */
+    padding: 40px;
+}
+.herocontent h1{
+    font-size: 32px; /* agrandi la taille */
+     font-weight: bold; /* met le texte en gras  */
+     margin-top: 20px; /* espace en haut  */
+     margin-bottom: 10px; /* espace en bas   */
 
+}
+.herocontent h2{
+     font-size: 20px; /* agrandi la taille */
+     
+}
 
+footer{
+    background-color:#61a5c2 ;
+}
+.containe{
+    margin-top: 50px; /* espace en haut  */
+    margin-bottom: 50px;/* espace en bas   */
+}
+#service{
+    margin-top: 50px;/* espace en haut  */
+    margin-bottom: 50px;/* espace en bas   */
+}
+#cards{
+    margin-top: 50px;/* espace en haut  */
+    margin-bottom: 50px; /* espace en bas   */
+}
+.foot{
+    text-align: center; /* centre les texte  */
+}
+ul{
+    list-style: none; /* n'applique pas de style    */
+   
+}
+.faq{
+     text-align: center; /* centre les texte  */
+   
+     margin-bottom: 30px; /* espace en bas   */
+     margin-top: 30p; /* espace en haut  */
 }

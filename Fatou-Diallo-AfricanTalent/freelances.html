@@ -8,7 +8,7 @@
   <!-- Bootstrap 5 via CDN : feuille de style -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <!-- Votre feuille de style personnelle -->
-  <link rel="stylesheet" href="CSS/style.css">
+  <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
  <style>
   .bg {
@@ -24,21 +24,15 @@
   <button id="topbtn"><i class="bi bi-arrow-up-square"></i></button>
   <!-- Le contenu de la page sera ajoute ici -->
   <nav class="navbar  navbar-expand-lg sticky-top">
-    <!-- cree une barre de nav responsive qui ne bouge pas quand on scrolle -->
-    
     <div class="container-fluid">
-      <a class="navbar-brand" href="#"> <img src="images/logonav.jpeg" alt="logoimage" height="50"
-          width="50"> </a>
+      <a class="navbar-brand" href="#"> <img src="images/logoTRSPR - Copie.jpeg" alt="logoimage" height="50px"
+          width="50px"> </a>
 
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
         aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
-         <!-- Transforme le bouton en bouton de menu
-        si on clique on pourra fermer et ouvrir avec data-bs-target pour l'indiquer l'element a ouvrir -->
       </button>
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-         <!-- collapse permet de cacher le menu -->
-        
         <div class="navbar-nav">
           <a class="nav-link " aria-current="page" href="index.html">Acceuil</a>
           <a class="nav-link" href="freelances.html">Freelances</a>
@@ -55,12 +49,7 @@
   </nav>
 
   <section class="carte">
-<div class="titre">
-    <h1 class="fade-in">Profils</h1>
-    <p class="fade-in">Choisissez le profils adaptée à vos besoins</p>
-  </div>
-
-    <select id="select-Form" aria-label="Default select example">
+    <select id="form-select" aria-label="Default select example">
           <option value="all">Toute les categories</option>
       <option value="Developpeur Mobile">Developpeur Mobile</option>
       <option value="Designer Web">Designer Web</option>
@@ -73,19 +62,21 @@
       <option value="Growth Hacker">Growth Hacker</option>
     </select>
   </section>
- 
+  <div class="titre">
+    <h1>Profils</h1>
+    <p>Choisissez le profils adaptée à vos besoins</p>
+  </div>
 
 
   <section class="container ">
 
     <!-- Carte 01 -->
-    <div class="row fade-in">
-      <div class="col-12 col-md-6 col-lg-4"> 
-         <!-- 3 colonnes sur desktop, 2 sur tablette, 1 sur mobile -->
+    <div class="row">
+      <div class="col-12 col-md-6 col-lg-4">
         <div class="card" data-category="Developpeur Mobile">
-          <img src="images/girlpicturefrl.jpg" class="card-img-top" alt="photoFL" width="300" height="300">
+          <img src="images/girl picture frl.jpg" class="card-img-top" alt="photoFL" width="300px" height="300px">
           <div class="card-body">
-            <h2 class="card-title">Awa Saran Dieng</h2>
+            <h5 class="card-title">Awa Saran Dieng</h5>
             <p>Developpeur Mobile</p>
             <p>Automatiser vos taches repetitives et gagnez des heures chaque semaine </p>
             <p>56000FCFA/h</p>
@@ -96,7 +87,7 @@
               <i class="bi bi-star-fill"></i>
               <i class="bi bi-star-fill"></i>
             </p>
-            <a href="#" class="btn">Voir profil</a>
+            <a href="#" class="btn btn-primary">Voir profil</a>
           </div>
         </div>
       </div>
@@ -106,9 +97,9 @@
 
       <div class="col-12 col-md-6 col-lg-4">
         <div class="card" data-category="Designer Web">
-          <img src="images/hijabiegirl.jpg" class="card-img-top" alt="photoFL" width="300" height="300">
+          <img src="images/hijabiegirl.jpg" class="card-img-top" alt="photoFL" width="300px" height="300px">
           <div class="card-body">
-            <h2 class="card-title">Ameena Jammelah Mohamed</h2>
+            <h5 class="card-title">Ameena Jammelah Mohamed</h5>
             <p>Designer Web</p>
             <p>Du logo à la charte graphique , je donne vie à votre marque.</p>
             <p>26000FCFA/h</p>
@@ -120,7 +111,7 @@
               <i class="bi bi-star-fill"></i>
 
             </p>
-            <a href="#" class="btn">Voir Profil</a>
+            <a href="#" class="btn btn-primary">Voir Profil</a>
           </div>
         </div>
       </div>
@@ -129,9 +120,9 @@
 
       <div class="col-12 col-md-6 col-lg-4">
         <div class="card" data-category="Developpeur Full stack">
-          <img src="images/manpictutrfrl.jpg" class="card-img-top" alt="photoFL" width="300" height="300">
+          <img src="images/man picture frl2.jpg" class="card-img-top" alt="photoFL" width="300px" height="300px">
           <div class="card-body">
-            <h2 class="card-title">Moussa Ndiaye </h2>
+            <h5 class="card-title">Moussa Ndiaye </h5>
             <p>Developpeur Full stack</p>
             <p>Passionné par le code propre et les interfacefluides.J'aide les startups à concretiser leur idées</p>
             <p>30000FCFA/h</p>
@@ -144,7 +135,7 @@
               <i class="bi bi-star-fill"></i>
 
             </p>
-            <a href="#" class="btn">Voir Profil</a>
+            <a href="#" class="btn btn-primary">Voir Profil</a>
           </div>
         </div>
       </div>
@@ -153,9 +144,9 @@
 
       <div class="col-12 col-md-6 col-lg-4">
         <div class="card" data-category="Data Analyst">
-          <img src="images/girlpicturefrl1.jpg" class="card-img-top" alt="photoFL" width="300" height="300">
+          <img src="images/girl picture frl1.jpg" class="card-img-top" alt="photoFL" width="300px" height="300px">
           <div class="card-body">
-            <h2 class="card-title">keyonna Sarr</h2>
+            <h5 class="card-title">keyonna Sarr</h5>
             <p>Data Analyst</p>
             <p>Creatif depuis 8ans, j'ai aide plus de 40startup à trouver leur </p>
             <p>85000FCFA/h</p>
@@ -165,7 +156,7 @@
               <i class="bi bi-star-fill"></i>
               <i class="bi bi-star-fill"></i>
             </p>
-            <a href="#" class="btn">Voir Profil</a>
+            <a href="#" class="btn btn-primary">Voir Profil</a>
           </div>
         </div>
       </div>
@@ -174,9 +165,9 @@
 
       <div class="col-12 col-md-6 col-lg-4">
         <div class="card" data-category="Data Scientist">
-          <img src="images/manpicturefrl3.jpg" class="card-img-top" alt="photoFL" width="300" height="300">
+          <img src="images/man picture frl3.jpg" class="card-img-top" alt="photoFL" width="300px" height="300px">
           <div class="card-body">
-            <h2 class="card-title">Khalifa Diagne</h2>
+            <h5 class="card-title">Khalifa Diagne</h5>
             <p>Data Scientist</p>
             <p>Passionné par les modéles ML et les statistiques,je transforme vos données en algorithmes capables
               d'anticiper les comportement clients. </p>
@@ -189,7 +180,7 @@
               <i class="bi bi-star-fill"></i>
 
             </p>
-            <a href="#" class="btn">Voir Profil</a>
+            <a href="#" class="btn btn-primary">Voir Profil</a>
           </div>
         </div>
       </div>
@@ -201,9 +192,9 @@
 
       <div class="col-12 col-md-6 col-lg-4">
         <div class="card" data-category="Full stack">
-          <img src="images/manpictutrfrl.jpg" class="card-img-top" alt="photoFL" width="300" height="300">
+          <img src="images/man picture frl.jpg" class="card-img-top" alt="photoFL" width="300px" height="300px">
           <div class="card-body">
-            <h2 class="card-title">Malick Gueye</h2>
+            <h5 class="card-title">Malick Gueye</h5>
             <p>Full stack</p>
             <p>Je livre des projets solides de la bases de données à l'interface. </p>
             <p>80000FCFA/h</p>
@@ -215,7 +206,7 @@
               <i class="bi bi-star-fill"></i>
 
             </p>
-            <a href="#" class="btn">Voir Profil</a>
+            <a href="#" class="btn btn-primary">Voir Profil</a>
           </div>
         </div>
       </div>
@@ -227,9 +218,9 @@
 
       <div class="col-12 col-md-6 col-lg-4">
         <div class="card" data-category="Ingenieur Cloud et Securite">
-          <img src="images/girlpicturefrl3.jpg" class="card-img-top" alt="photoFL" width="300" height="300">
+          <img src="images/girl picture frl3.jpg" class="card-img-top" alt="photoFL" width="300px" height="300px">
           <div class="card-body">
-            <h2 class="card-title">Maimouna Diallo</h2>
+            <h5 class="card-title">Maimouna Diallo</h5>
             <p>Ingenieur Cloud et Securite</p>
             <p>je concoie et deploie des architecture cloud robuste pour que vos apps tiennent la charge sans explosion
               de couts ni de complexité</p>
@@ -240,7 +231,7 @@
               <i class="bi bi-star-fill"></i>
               <i class="bi bi-star-fill"></i>
             </p>
-            <a href="#" class="btn">Voir Profil</a>
+            <a href="#" class="btn btn-primary">Voir Profil</a>
           </div>
         </div>
       </div>
@@ -251,10 +242,10 @@
 
       <div class="col-12 col-md-6 col-lg-4">
         <div class="card" data-category="Growth Hacker">
-          <img src="images/AmazonFBAComp.jpg" class="card-img-top" alt="photoFL" width="300"
-            height="300">
+          <img src="images/Amazon FBA Complete Guide.jpg" class="card-img-top" alt="photoFL" width="300px"
+            height="300px">
           <div class="card-body">
-            <h2 class="card-title">Moustapha Fall</h2>
+            <h5 class="card-title">Moustapha Fall</h5>
             <p>Growth Hacker</p>
             <p>J'optimise la visibilite de vos pages avec des methodes qui fonctionnent vraiment.</p>
             <p>67000FCFA/h</p>
@@ -265,7 +256,7 @@
               <i class="bi bi-star-fill"></i>
               <i class="bi bi-star-fill"></i>
             </p>
-            <a href="#" class="btn ">Voir Profil</a>
+            <a href="#" class="btn btn-primary">Voir Profil</a>
           </div>
         </div>
       </div>
@@ -273,9 +264,9 @@
 
       <div class="col-12 col-md-6 col-lg-4">
         <div class="card" data-category="Ingenieur DevOpsk">
-          <img src="images/Keyonna.jpg" class="card-img-top" alt="photoFL" width="300" height="300">
+          <img src="images/Keyonna _.jpg" class="card-img-top" alt="photoFL" width="300px" height="300px">
           <div class="card-body">
-            <h2 class="card-title">Maty Sarr</h2>
+            <h5 class="card-title">Maty Sarr</h5>
             <p>Ingenieur DevOpsk </p>
             <p>Accelerer vos livraisons sans casser la stabilite</p>
             <p>70000FCFA/h</p>
@@ -285,7 +276,7 @@
               <i class="bi bi-star-fill"></i>
               <i class="bi bi-star-fill"></i>
             </p>
-            <a href="#" class="btn">Voir Profil</a>
+            <a href="#" class="btn btn-primary">Voir Profil</a>
           </div>
         </div>
       </div>
@@ -302,53 +293,52 @@
 
 
 
- <footer class="fade-in">
-      <div class="container text-center mt-5 pt-4">
-         <!-- texte centre espace a l'interieur en haut margintop  -->
-        <div class="row align-items-start ">
-          <!-- tout les elements commence en haut de la ligne -->
-          <div class="col  align-items-stretch d-flex  justify-content-center  mt-4">
-             <!-- forme une colonne centre le texte aligne les elements margin top -->
-            <img src="images/logonav.jpeg" alt="logoTRSPR" width="70" height="70">
-            <strong>AfriTalent c'est ce qu'il vous faut ! </strong>
-          </div>
+  <footer>
+    <div class="container text-center mt-5 pt-4 ">
+      <div class="row align-items-start ">
+        <div class="col 
+    align-items-stretch d-flex  justify-content-center  mt-4">
+          <h1></h1>
+          <img src="images/logoTRSPR - Copie.jpeg" alt="logoTRSPR" width="70px" height="70px">
+          <strong>AfriTalent c'est ce qu'il vous faut ! </strong>
+        </div>
 
 
-          <div class="col">
-            <h3>Liens utiles</h3>
-            <a class="nav-link " aria-current="page" href="index.html">Acceuil</a>
-            <a class="nav-link" href="freelances.html">Freelaces</a>
-            <a class="nav-link" href="tarifs.html">Tarifs</a>
-            <a class="nav-link" href="about.html">About</a>
-            <a class="nav-link" href="contact.html">Contact</a>
-          </div>
+        <div class="col">
+          <h4>Liens utiles</h4>
+          <a class="nav-link " aria-current="page" href="index.html">Acceuil</a>
+          <a class="nav-link" href="freelances.html">Freelaces</a>
+          <a class="nav-link" href="tarifs.html">Tarifs</a>
+          <a class="nav-link" href="about.html">About</a>
+          <a class="nav-link" href="contact.html">Contact</a>
+        </div>
 
 
-          <div class="col">
-            <h3>Ressources</h3>
-            <ul >
-              <li>Blog</li>
-              <li>Support</li>
-              <li>FAQ</li>
-            </ul>
-          </div>
+        <div class="col">
+          <h4>Ressources</h4>
+          <ul type="none">
+            <li>Blog</li>
+            <li>Support</li>
+            <li>FAQ</li>
+          </ul>
+        </div>
 
 
-          <div class="col">
-            <h3>Contact</h3>
-            <div>
-              <p>Email : contact@Afritalent.com</p>
-              <p>Téléphone : 33 23 45 67 89</p>
-            </div>
-            <i class="bi bi-tiktok"></i>
-            <i class="bi bi-whatsapp"></i>
-            <i class="bi bi-twitter-x"></i>
-          </div>
+        <div class="col">
+          <h4>Contact</h4>
+          <article>
+            <p>Email : contact@Afritalent.com</p>
+            <p>Téléphone : 33 23 45 67 89</p>
+          </article>
+          <i class="bi bi-tiktok"></i>
+          <i class="bi bi-whatsapp"></i>
+          <i class="bi bi-twitter-x"></i>
         </div>
       </div>
-    </footer>
-    <hr>
-    <p class="foot">&copy;2026 Afritalent.Tout droits réservés</p>
+    </div>
+  </footer>
+  <hr>
+  <p class="footer">&copy;2026 Afritalent.Tout droits réservés</p>
 
 
 
@@ -368,10 +358,11 @@
 
 
 
-  
+  </section>
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   <!-- Votre script JavaScript -->
-  <script src="Js/main.js"></script>
+  <script src="js/main.js"></script>
 
 </body>
 
