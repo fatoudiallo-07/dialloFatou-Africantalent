@@ -144,16 +144,30 @@ h3 h2 {
 
 }
 
-@media screen and (min-width: 374px) {
+@media screen and (min-width: 768px) {
     /* Styles à appliquer pour les mobiles */
+    .about1 { 
+       flex-direction: column;
+    }
+    
+
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 769px) {
     /* Styles à appliquer pour les tablettes */
-}
+   .about1 { 
+       flex-direction: row;
+    }
+    
 
-@media screen and (min-width: 1200px) {
+    }
+
+@media screen and (min-width: 1024px) {
     /* Styles à appliquer pour les ordinateurs de bureau */
+   .about1 { 
+       flex-direction: row;
+    }
+
 }
 
 
